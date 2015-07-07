@@ -1,6 +1,8 @@
 // Javascript Quiz Game
 
 // Questions
+
+window.onload = function(){
 var q1 = {q:"What is the name of Ned Stark's youngest daughter?", options:"1) Yari 2) Arya 3) Darya 4) Catelyn", a: 2};
 var q2 = {q:"What is the name of the country 'Game of Thrones' takes place in?", options:"1) Westeros 2) Westrose 3) Braavos 4) King's Landing", a: 1};
 var q3 = {q:"Who wields 'Longclaw' out of these characters?", options:"1) Jaime Lannister 2) The Mountain 3) Sandor Clegane 4) Jon Snow", a: 4};
@@ -27,7 +29,7 @@ var qarray = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
 var a, i = 0;
 var score = 0;
 
-alert("Get ready for a Quiz Game of Thrones! Don't worry -- these are only season/book one questions, so no there are spoilers.");
+alert("Get ready for a Quiz Game of Thrones! Don't worry -- these are only season/book one questions, so there are no spoilers.");
 
 // for loop that iterates through qarray and displays the questions through that iteration
 // nested if loop: if the user answer matches the correct answer, their score goes up by 1
@@ -54,3 +56,5 @@ if (percent >= 70) {
 } else {
   alert("You know nothing Jon Snow; you failed")
 }
+
+};
